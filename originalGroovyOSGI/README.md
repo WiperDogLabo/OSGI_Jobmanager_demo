@@ -9,3 +9,8 @@ Go to directory and simply run the following command:
   groovy bootup.groovy
   
 Place and edit quartz.properties for terracotta experiment
+
+Usage: 
+  setup_dependencies.sh
+  groovy bootup.groovy
+
