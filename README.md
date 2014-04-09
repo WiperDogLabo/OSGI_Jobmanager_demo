@@ -7,9 +7,10 @@ OSGI_Jobmanager_demo
       (This will produce some exceptions because of ClassLoader)  
    FullOSGI   
    ========  
-      Under construction...  
       Construct OSGI framework bundle by groovy  
       Create jobs, schedule by groovyRunner bundle   
       (Avoid ClassLoader's exceptions)   
+      This demo run normally with 2 jobs, scheduled in boot.groovy
+      log is temporary print out to console
        
 
