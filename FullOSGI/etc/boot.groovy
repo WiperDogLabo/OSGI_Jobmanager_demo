@@ -27,7 +27,11 @@ def doBootStep() {
         def job1 = executableJob.newInstance("job1")
         def jd1 = jf.createJob(job1)
         def trg1 = jf.createTrigger("job1", 0, 2000)
+        def job2 = executableJob.newInstance("job2")
+        def jd2 = jf.createJob(job2)
+        def trg2 = jf.createTrigger("job2", 0, 2000)
 		jf.scheduleJob(jd1, trg1)
+		jf.scheduleJob(jd2, trg2)
 }
 
 /**

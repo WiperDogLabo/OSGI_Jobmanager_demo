@@ -1,8 +1,6 @@
 #!/bin/sh
 # Wiperdog Service Startup Script for Unix
-
 # determine the prefix
-
 self="$0"
 while [ -h "$self" ]; do
 	res=`ls -ld "$self"`

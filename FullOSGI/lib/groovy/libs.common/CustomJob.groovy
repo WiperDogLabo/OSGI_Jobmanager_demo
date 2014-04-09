@@ -2,6 +2,7 @@ import org.wiperdog.jobmanager.JobExecutable
 import org.quartz.JobDataMap
 
 class CustomJob implements JobExecutable, Serializable {
+	private static final long serialVersionUID = 1L;
 	String name
 	
 	CustomJob(jobname){

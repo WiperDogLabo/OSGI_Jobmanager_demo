@@ -131,9 +131,9 @@ if [ -z "$GROOVY_CONF" ] ; then
     GROOVY_CONF="$GROOVY_HOME/etc/groovy-starter.conf"
 fi
 STARTER_CLASSPATH="$GROOVY_HOME/lib/java/bundle.a/groovy-all-2.2.1.jar"
-BUNDLE_CLASSPATH="$GROOVY_HOME/lib/java/bundle/*"
-BUNDLE_A_CLASSPATH="$GROOVY_HOME/lib/java/bundle.a/*"
-BUNDLE_WRAP_CLASSPATH="$GROOVY_HOME/lib/java/bundle.wrap/*"
+BUNDLE_CLASSPATH="$GROOVY_HOME/lib/java/bundle/*.jar"
+BUNDLE_A_CLASSPATH="$GROOVY_HOME/lib/java/bundle.a/*.jar"
+BUNDLE_WRAP_CLASSPATH="$GROOVY_HOME/lib/java/bundle.wrap/*.jar"
 BUNDLE_EXT_CLASSPATH="$GROOVY_HOME/lib/java/ext/*"
 # Create the final classpath. Setting a classpath using the -cp or -classpath option means not to use the
 # global classpath. Groovy behaves then the same as the java interpreter
