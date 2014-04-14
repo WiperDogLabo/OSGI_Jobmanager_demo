@@ -30,12 +30,14 @@ $mvnexec org.apache.maven.plugins:maven-dependency-plugin:2.8:get -Dartifact=org
 ./checkoutAndInstallQuartz.sh
 cp $PREFIX/quartz-2.2.1/target/quartz-2.2.1.jar $PREFIX/quartz-2.2.1.jar
 
+$mvnexec org.apache.maven.plugins:maven-dependency-plugin:2.8:get -Dartifact=org.wiperdog:org.wiperdog.jobmanager:0.2.1 -Ddest=$PREFIX/
+
 #~ process jobmanager bundle
-if [ ! -d org.wiperdog.jobmanager ];then 
-	$gitexec clone https://github.com/dothihuong-luvina/org.wiperdog.jobmanager
-fi
-if [ ! -f org.wiperdog.jobmanager/target/org.wiperdog.jobmanager-0.2.1.jar ];then 
-	cd org.wiperdog.jobmanager
-	$mvnexec install -DskipTests
-fi
-cp $PREFIX/org.wiperdog.jobmanager/target/org.wiperdog.jobmanager-0.2.1.jar $PREFIX/org.wiperdog.jobmanager-0.2.1.jar
+#~ if [ ! -d org.wiperdog.jobmanager ];then 
+	#~ $gitexec clone https://github.com/dothihuong-luvina/org.wiperdog.jobmanager
+#~ fi
+#~ if [ ! -f org.wiperdog.jobmanager/target/org.wiperdog.jobmanager-0.2.1.jar ];then 
+	#~ cd org.wiperdog.jobmanager
+	#~ $mvnexec install -DskipTests
+#~ fi
+#~ cp $PREFIX/org.wiperdog.jobmanager/target/org.wiperdog.jobmanager-0.2.1.jar $PREFIX/org.wiperdog.jobmanager-0.2.1.jar
