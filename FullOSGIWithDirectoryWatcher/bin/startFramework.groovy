@@ -99,8 +99,8 @@ public class WiperDogBoot{
 				println e
 			}
 		}
-		context.installBundle("file://" + new File("${felix_home}/lib/bundle/org.wiperdog.scriptsupport.groovyrunner-0.2.0.jar").getAbsolutePath())
-		
+		//~ context.installBundle("file://" + new File("${felix_home}/lib/bundle/org.wiperdog.scriptsupport.groovyrunner-0.2.0.jar").getAbsolutePath())
+		context.installBundle("mvn:org.wiperdog/org.wiperdog.scriptsupport.groovyrunner/0.2.0")
 		//~ jobmanager bundle is the new build bundle
 		context.installBundle("file://" + new File("${felix_home}/lib/bundle/org.wiperdog.jobmanager-0.2.1.jar").getAbsolutePath())
 		context.getBundles().each{ b ->

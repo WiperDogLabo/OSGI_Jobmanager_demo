@@ -50,13 +50,13 @@ fi
 cp $PREFIX/bin/org.wiperdog.jobmanager/target/org.wiperdog.jobmanager-0.2.1.jar $PREFIX/lib/bundle/org.wiperdog.jobmanager-0.2.1.jar
 
 #~ process groovyrunner bundle
-if [ ! -d org.wiperdog.scriptsupport.groovyrunner ];then 
-	$gitexec clone https://github.com/wiperdog/org.wiperdog.scriptsupport.groovyrunner.git
-	cp $PREFIX/bin/groovyrunnerpatch/pom.xml $PREFIX/bin/org.wiperdog.scriptsupport.groovyrunner/pom.xml
-fi
-if [ ! -f org.wiperdog.scriptsupport.groovyrunner/target/org.wiperdog.scriptsupport.groovyrunner-0.2.0.jar ];then 
-	cd org.wiperdog.scriptsupport.groovyrunner
-	$mvnexec install -DskipTests
-	cd $PREFIX
-fi
-cp $PREFIX/bin/org.wiperdog.scriptsupport.groovyrunner/target/org.wiperdog.scriptsupport.groovyrunner-0.2.1-SNAPSHOT.jar $PREFIX/lib/bundle/org.wiperdog.scriptsupport.groovyrunner-0.2.0.jar
+#~ if [ ! -d org.wiperdog.scriptsupport.groovyrunner ];then 
+	#~ $gitexec clone https://github.com/wiperdog/org.wiperdog.scriptsupport.groovyrunner.git
+	#~ cp $PREFIX/bin/groovyrunnerpatch/pom.xml $PREFIX/bin/org.wiperdog.scriptsupport.groovyrunner/pom.xml
+#~ fi
+#~ if [ ! -f org.wiperdog.scriptsupport.groovyrunner/target/org.wiperdog.scriptsupport.groovyrunner-0.2.0.jar ];then 
+	#~ cd org.wiperdog.scriptsupport.groovyrunner
+	#~ $mvnexec install -DskipTests
+	#~ cd $PREFIX
+#~ fi
+#~ cp $PREFIX/bin/org.wiperdog.scriptsupport.groovyrunner/target/org.wiperdog.scriptsupport.groovyrunner-0.2.1-SNAPSHOT.jar $PREFIX/lib/bundle/org.wiperdog.scriptsupport.groovyrunner-0.2.0.jar
