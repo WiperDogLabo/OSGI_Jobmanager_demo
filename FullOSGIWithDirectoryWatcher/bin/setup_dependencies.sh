@@ -40,7 +40,7 @@ cp $PREFIX/bin/quartz-2.2.1/target/quartz-2.2.1.jar $PREFIX/lib/bundle/quartz-2.
 
 #~ process jobmanager bundle
 if [ ! -d org.wiperdog.jobmanager ];then 
-	$gitexec clone https://github.com/dothihuong-luvina/org.wiperdog.jobmanager
+	$gitexec clone https://github.com/leminhquan-luvina/org.wiperdog.jobmanager
 fi
 if [ ! -f org.wiperdog.jobmanager/target/org.wiperdog.jobmanager-0.2.1.jar ];then 
 	cd org.wiperdog.jobmanager
